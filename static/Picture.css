@@ -1,0 +1,23 @@
+.picture-card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background-color: lightblue;
+  transition: 0.3s;
+
+  border-radius: 5px;
+  padding: 12px 12px;
+
+  display: inline-block;
+  margin: 1rem;
+  font-size: 2rem;
+}
+
+.name {
+  font-weight: bold;
+  font-family: Arial, serif;
+}
+
+.picture {
+  display: block;
+  height: 300px;
+  padding: 8px 8px;
+}
