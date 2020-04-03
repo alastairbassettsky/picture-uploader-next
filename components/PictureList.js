@@ -21,7 +21,7 @@ export const PictureList = () => {
 
     const [pictures, setPictures] = useState([]);
 
-    // getAllPictureNames();
+    getAllPictureNames();
 
     return (
         <div className="picture-list">
