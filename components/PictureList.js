@@ -1,31 +1,11 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {Picture} from "./Picture";
-import axios from 'axios';
 
-const testData = [
-    "Lake District",
-    "Sailing",
-    "Skiing"
-];
-
-export const PictureList = () => {
-
-    function getAllPictureNames () {
-        axios.get('http://localhost:8080/images')
-            .then(response => response.data)
-            .then(responseJson => {
-                console.log(responseJson);
-                setPictures(responseJson)
-            });
-    }
-
-    const [pictures, setPictures] = useState([]);
-
-    getAllPictureNames();
+export const PictureList = ({pictures}) => {
 
     return (
         <div className="picture-list">
-            {testData.map(picture =>
+            {pictures.map(picture =>
                 <Picture
                     key={picture}
                     name={picture}
