@@ -13,3 +13,10 @@
   color: white;
   font-family: Arial, serif;
 }
+
+.AddPicture {
+  text-align: center;
+  font-weight: bold;
+  font-family: Arial, serif;
+  font-size: calc(10px + 2vmin);
+}

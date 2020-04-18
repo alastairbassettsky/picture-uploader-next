@@ -1,16 +1,18 @@
 import React from 'react';
-import {Picture} from "./Picture";
+import {PictureCard} from "./PictureCard";
+import {AddPictureCard} from "./AddPictureCard";
 
 export const PictureList = ({pictures}) => {
 
     return (
         <div className="picture-list">
             {pictures.map(picture =>
-                <Picture
+                <PictureCard
                     key={picture}
                     name={picture}
                 />
             )}
+            <AddPictureCard />
         </div>
     )
 };

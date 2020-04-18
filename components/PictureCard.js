@@ -2,7 +2,7 @@ import React from "react";
 import {Icon} from "./Icon";
 import Head from 'next/head';
 
-export const Picture = (props) => {
+export const PictureCard = (props) => {
     const deleteImage = (name) => {
         console.log("Deleting image: " + name)
     };
@@ -15,7 +15,7 @@ export const Picture = (props) => {
         <div className="picture-card">
             <Head>
                 <title>"Picture Card"</title>
-                <link href="/static/Picture.css" rel="stylesheet" />
+                <link href="/static/PictureCard.css" rel="stylesheet" />
             </Head>
             <div className="name">{props.name}</div>
             <img className="picture" src={`http://localhost:8080/images/${props.name}`} alt=""/>
